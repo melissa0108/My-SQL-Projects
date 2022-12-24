@@ -1,0 +1,21 @@
+
+/*This database contains an incomplete list of box office hits and their release year. I am going to get the results back in two different ways. */
+
+
+CREATE TABLE movies (id INTEGER PRIMARY KEY, name TEXT, release_year INTEGER);
+INSERT INTO movies VALUES (1, "Casino", 1995);
+INSERT INTO movies VALUES (2, "Titanic", 1997);
+INSERT INTO movies VALUES (3, "American Pie", 1999);
+INSERT INTO movies VALUES (4, "Gladiator, 2000);
+INSERT INTO movies VALUES (5, "The Little Mermaid", 1989);
+INSERT INTO movies VALUES (6, "Constantine", 2005);
+
+
+/*Select all the movies.*/
+
+SELECT * FROM movies;
+
+/*Retrieve only the movies that were released in the year 1995 or later, not before. 
+Sort the results so that the earlier movies are listed first. */
+
+SELECT * FROM movies WHERE release_year > 1995 ORDER BY release_year;
