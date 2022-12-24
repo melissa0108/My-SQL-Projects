@@ -1,0 +1,26 @@
+*Create your own store! Your store should sell one type of things, like clothing or bikes, whatever you want
+ store to specialize in. You should have a table for all the items in your store, and at least 5 columns 
+ for the kind of data you think you'd need to store. You should sell at least 15 items, and use select 
+ statements to order your items by price and show at least one statistic about the items.
+ 
+ CREATE TABLE melissas_boutique (id INTEGER PRIMARY KEY, item_name TEXT, price INTEGER, aisle INTEGER, color TEXT);
+
+INSERT INTO melissas_boutique VALUES (1, "dress", 25.00, 4, "black");
+INSERT INTO melissas_boutique VALUES (2, "tanktop", 15.00, 2, "red");
+INSERT INTO melissas_boutique VALUES (3, "tshirt", 10.00, 5, "teal"); 
+INSERT INTO melissas_boutique VALUES (4, "jeans", 50.00, 3, "indigo");
+INSERT INTO melissas_boutique Values (5, "skirt", 22.00, 4, "black");
+INSERT INTO melissas_boutique VALUES (6, "pants", 35.00, 3, "gray");
+INSERT INTO melissas_boutique VALUES (7, "jacket", 60.00, 6, "blue"); 
+INSERT INTO melissas_boutique VALUES (8, "leggings", 12.00, 1, "black");
+INSERT INTO melissas_boutique VALUES (9, "croptop", 14.00, 2, "white"); 
+INSERT INTO melissas_boutique VALUES (10, "jumpsuit", 36.00, 7, "green");
+INSERT INTO melissas_boutique VALUES (11, "romper", 32.00, 7, "black");
+INSERT INTO melissas_boutique VALUES (12, "purse", 40.00, 8, "brown"); 
+INSERT INTO melissas_boutique VALUES (13, "necklace", 30.00, 8, "gold");
+INSERT INTO melissas_boutique VALUES (14, "nightgown", 20.00, 9, "pink"); 
+INSERT INTO melissas_boutique VALUES (15, "wallet", 17.00, 8, "purple");
+
+SELECT * FROM melissas_boutique;
+
+SELECT item_name, aisle FROM melissas_boutique WHERE color = "black" ORDER BY aisle;
